@@ -11,6 +11,7 @@ body {
   background: linear-gradient(to bottom, #121 0%, #000 20%);
   min-height: 100vh;
   box-shadow: inset -15px 0px 2vw 0vw rgba(17, 34, 17, 1);
+  max-width: 100%;
 }
 
 /* nav start */
@@ -98,11 +99,7 @@ footer {
 }
 
 /* footer end */
-@media (orientation: portrait), (max-width: 1250px) {
-  @font-face {
-    font-family: Montserrat;
-    src: url("./fonts/Montserrat.Montserrat-VariableFont_wght.ttf");
-  }
+@media (orientation: portrait) and (max-width: 1024px) {
 
 
   /* nav start */
