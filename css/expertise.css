@@ -1,0 +1,51 @@
+body{
+    min-height: 120vw;
+}
+.CVcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 13vw;
+}
+
+.CV{
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+    border-bottom: 1px solid white;
+    text-shadow: 0vw 0vw 0vw white;
+    animation-name: cvAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.CV:hover{
+    text-shadow: 0vw 0vw 1vw white;
+}
+
+@keyframes cvAnim {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.CVcontent{
+    background-color: rgb(233,233,233);
+    border-radius: 0.5vw;
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+    top: 5vw;
+    height: 110vw;
+    padding: 1vw 0.5vw;
+    box-sizing: border-box;
+}

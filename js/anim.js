@@ -14,7 +14,7 @@ var SPACING = 2; // RESOLUTION
 // var SPACING = 0.2;
 var POINTS = MAX_OFFSET / SPACING;
 var PEAK = MAX_OFFSET * 0.25; //BRDO U SREDINI
-var POINTS_PER_LAP = -8;
+var POINTS_PER_LAP = -10;
 var SHADOW_STRENGTH = 12;
 
 function startline(){
@@ -26,7 +26,7 @@ function startline(){
     }
 }
 
-var lineInterval = setInterval(startline, 350)
+var lineInterval = setInterval(startline, 1000)
 
 setup();
 
