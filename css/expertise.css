@@ -1,5 +1,6 @@
 body{
-    min-height: 120vw;
+    /* min-height: 120vw; */
+    padding-bottom: 5vw;
 }
 .CVcontainer{
     display: flex;
@@ -194,4 +195,8 @@ hr{
 .CVcontent h2{
     font-size: 1.7vw;
     font-weight: 300;
+}
+
+.dlCV{
+    font-weight: 900;
 }
