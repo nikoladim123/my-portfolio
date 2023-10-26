@@ -10,7 +10,7 @@ var time = 0,
     lastY;
 
 var MAX_OFFSET = 300; //konusno / konveksno
-var SPACING = 2; // RESOLUTION
+var SPACING = 1; // RESOLUTION
 // var SPACING = 0.2;
 var POINTS = MAX_OFFSET / SPACING;
 var PEAK = MAX_OFFSET * 0.25; //BRDO U SREDINI
@@ -18,7 +18,7 @@ var POINTS_PER_LAP = -10;
 var SHADOW_STRENGTH = 12;
 
 function startline(){
-    POINTS_PER_LAP -= 0.02;
+    POINTS_PER_LAP -= 0.01;
     // console.log(POINTS_PER_LAP);
     if(POINTS_PER_LAP < -30){
       clearInterval(lineInterval)
@@ -26,7 +26,7 @@ function startline(){
     }
 }
 
-var lineInterval = setInterval(startline, 1000)
+var lineInterval = setInterval(startline, 50)
 
 setup();
 
@@ -75,7 +75,7 @@ function render() {
   context.globalCompositeOperation = 'lighter';
   context.strokeStyle = '#fff';
   context.shadowColor = '#fff';
-  context.lineWidth = 2;
+  context.lineWidth = 3;
   context.beginPath();
 
   for( var i = POINTS; i > 0; i -- ) {
@@ -90,7 +90,7 @@ function render() {
 
     var o = 1 - ( Math.min( value, PEAK ) / PEAK );
 
-    y -= Math.pow( o, 2 ) * 200;
+    y -= Math.pow( o, 3 ) * 200;
     y += 200 * value / MAX_OFFSET;
     y += x / cx * width * 0.1;
 
