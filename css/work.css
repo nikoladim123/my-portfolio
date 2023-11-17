@@ -36,7 +36,7 @@
 .gridContainer>div h3 {
   margin: 0;
   color: white;
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: 100;
   text-align: center;
 }
@@ -65,7 +65,7 @@
 
 .g3 img {
   position: relative;
-  top: -50%;
+  top: 0%;
 }
 
 .g4 {
@@ -74,7 +74,7 @@
 }
 
 .g4 h3, .g2 h3{
-  font-size: 2.8vw !important;
+  font-size: 2vw !important;
 }
 
 .overlayZ {
@@ -101,4 +101,14 @@
 .gridContainer>div:hover img {
   scale: 1.2;
   transition: 10s;
+}
+
+
+/* Custom fix */
+#donations img{
+  left: 0;
+}
+#donations a{
+  display: flex;
+  justify-content: center;
 }
