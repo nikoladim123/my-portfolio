@@ -1,3 +1,6 @@
+main{
+  padding: 0 5px;
+}
 .nav-items-right a:nth-child(3) {
   text-shadow: 0 0 0.5vw #fff, 0 0 1vw rgb(255 255 255 / 30%), 0 0 1vw rgb(255 255 255 / 3%), 0 0 0.5vw #e60073, 0 0 60px #e60073;
 }
